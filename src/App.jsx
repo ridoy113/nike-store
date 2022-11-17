@@ -1,9 +1,12 @@
 import React from 'react'
+import { Hero } from './components'
 
 const App = () => {
   return (
     <div>
-      <h1 className='text-2xl'>fjhbspifu</h1>
+      <main>
+        <Hero />
+      </main>
     </div>
   )
 }
