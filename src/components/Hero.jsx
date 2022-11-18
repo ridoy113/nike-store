@@ -1,4 +1,5 @@
 import React from 'react'
+import Clips from './utils/Clips'
 
 const Hero = ({ heroapi: { title, subtitle, btntext, img, sociallinks, videos } }) => {
 
@@ -11,8 +12,16 @@ const Hero = ({ heroapi: { title, subtitle, btntext, img, sociallinks, videos } 
             <h1 className='text-6xl lg:text-5xl md:text-4xl sm:text-3xl xsm:text-2xl font-extrabold filter drop-shadow-sm text-slate-200'>{title}</h1>
             <h1 className='text-6xl lg:text-5xl md:text-4xl sm:text-3xl xsm:text-2xl font-extrabold filter drop-shadow-sm text-slate-200'>{subtitle}</h1>
             <button className='px-7 py-1 rounded active: scale-90 transition-all duration-100 ease-in-out shadow-md sm:text-sm bg-slate-200 shadow-slate-200 rounded-xl my-5 '>{btntext}</button>
-            {/* <div className=''></div>
-              <div className=''></div> */}
+            <div className=''>
+              {videos.map((val, i) => (
+                <Clips
+                key={i}
+                imgsrc={val.imgsrc}
+                clip={val.clip}
+                />
+              ))}
+            </div>
+            <div className=''></div>
           </div>
           <div className=''>
             <img src={img} alt="hero-img/img" className='w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill' />
