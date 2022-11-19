@@ -4,7 +4,8 @@ import Title from './utils/Title';
 
 
 
-const Sales = () => {
+const Sales = ({ endpoint }) => {
+    console.log(endpoint);
     return (
         <>
             <div>
