@@ -4,15 +4,17 @@ import Title from './utils/Title';
 
 
 
-const Sales = ({ endpoint }) => {
-    console.log(endpoint);
+const Sales = ({ endpoint: { title, items } }) => {
+    // console.log(endpoint);
     return (
         <>
             <div>
-                <Title />
+                <Title title={title} />
 
                 <div>
-                    <Item />
+                    {items?.map((item, i) => (
+                        <Item {...item} key={i} />
+                    ))}
                 </div>
             </div>
         </>
