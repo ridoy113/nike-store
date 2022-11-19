@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hero, Sales } from './components';
 
-import { heroapi, popularsales, topratesales } from './data/data';
+import { heroapi, popularsales, toprateslaes } from './data/data';
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <main>
         <Hero heroapi={heroapi} />
         <Sales endpoint={popularsales} />
-        <Sales endpoint={topratesales} />
+        <Sales endpoint={toprateslaes} />
       </main>
     </div>
   )
