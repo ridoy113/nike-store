@@ -6,7 +6,7 @@ import { heroapi, popularsales, toprateslaes } from './data/data';
 const App = () => {
   return (
     <div>
-      <main>
+      <main className='flex flex-col gap-16 relative'>
         <Hero heroapi={heroapi} />
         <Sales endpoint={popularsales} />
         <Sales endpoint={toprateslaes} />
