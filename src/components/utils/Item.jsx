@@ -6,7 +6,7 @@ const Item = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
 
     return (
         <>
-            <div className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center justify-items-center`}>
+            <div className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center justify-items-center rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full`}>
                 <div className='grid items-center justify-items-center'>
                     <h1 className='text-slate-200 text-xl lg:text-lg md:text-base font-medium filter drop-shadow'>{title}</h1>
                     <p className='text-slate-200 filter drop-shadow text-base md:text-sm font-normal'>{text}</p>
@@ -34,7 +34,7 @@ const Item = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
                     <img
                         src={img}
                         alt="img/item-img"
-                        className=''
+                        className='h-36 w-64 transitions-theme hover:-rotate-12'
                     />
                 </div>
             </div>
