@@ -34,7 +34,7 @@ const Item = ({ ifExists, id, color, shadow, title, text, img, btn, rating, pric
                     <img
                         src={img}
                         alt="img/item-img"
-                        className='h-36 w-64 transitions-theme hover:-rotate-12'
+                        className={`transitions-theme hover:-rotate-12 ${ifExists ? 'h-auto w-64 lg:w-56 md:w-48 -rotate-[35deg]' : 'h-36 w-64'}`}
                     />
                 </div>
             </div>
