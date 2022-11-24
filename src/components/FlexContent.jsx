@@ -2,7 +2,12 @@ import React from 'react'
 
 const FlexContent = () => {
     return (
-        <div>FlexContent</div>
+        <>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </>
     )
 }
 
