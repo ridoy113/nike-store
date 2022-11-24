@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hero, Sales, FlexContent } from './components';
 
-import { heroapi, popularsales, toprateslaes } from './data/data';
+import { heroapi, popularsales, toprateslaes, highlight, sneaker } from './data/data';
 
 const App = () => {
   return (
@@ -9,8 +9,9 @@ const App = () => {
       <main className='flex flex-col gap-16 relative'>
         <Hero heroapi={heroapi} />
         <Sales endpoint={popularsales} ifExists />
+        <FlexContent endpoint={highlight} />
         <Sales endpoint={toprateslaes} />
-        <FlexContent />
+        <FlexContent endpoint={sneaker} />
       </main>
     </div>
   )
