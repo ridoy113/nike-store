@@ -3,9 +3,9 @@ import React from 'react'
 const FlexContent = ({ endpoint: { title, heading, text, img, btn, url } }) => {
     return (
         <>
-            <div>
-                <div>
-                    <h1>{heading}</h1>
+            <div className={`flex items-center justify-between lg:flex-col lg:justify-center nike-container`}>
+                <div className='max-w-lg lg:max-w-none w-full md:text-center'>
+                    <h1 className='text-4xl'>{heading}</h1>
                     <h1>{title}</h1>
                     <p>{text}</p>
                     <a href={url}>
@@ -15,7 +15,7 @@ const FlexContent = ({ endpoint: { title, heading, text, img, btn, url } }) => {
 
 
 
-                <div>
+                <div className=''>
                     <img src={img} alt={`img/${heading}`} className="" />
                 </div>
             </div>
