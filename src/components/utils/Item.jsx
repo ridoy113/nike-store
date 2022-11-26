@@ -21,7 +21,7 @@ const Item = ({ ifExists, id, color, shadow, title, text, img, btn, rating, pric
                     </div>
 
                     <div className='flex items-center gap-3'>
-                        <button type='button' className='bg-white/90 blur-effect-theme py-1 rounded active:scale-90 transition-all duration-100 ease-in-out shadow-md sm:text-sm p-0.5 shadow shadow-slate-200'><ShoppingBagIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight text-slate-900' /></button>
+                        <button type='button' className='bg-white/90 blur-effect-theme py-1 rounded active:scale-90 transition-all duration-100 ease-in-out shadow-md sm:text-sm p-0.5 shadow shadow-slate-200'><ShoppingBagIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-900 cursor-pointer transition-all duration-100 active:scale-110 leading-tight text-slate-900' /></button>
                         <button type='button' className='bg-white/90 blur-effect-theme px-7 py-1 rounded active:scale-90 transition-all duration-100 ease-in-out shadow-md sm:text-sm px-2 py-1 shadow shadow-slate-200 text-sm text-black'>{btn}</button>
                     </div>
                 </div>
