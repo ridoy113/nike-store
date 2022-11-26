@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Stories = () => {
+const Stories = ({ story: { title, news, } }) => {
     return (
-        <div>
-            brazil fifa 2022
-        </div>
+        <>
+            <div>
+                
+            </div>
+        </>
     )
 }
 
