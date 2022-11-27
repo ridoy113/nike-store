@@ -30,13 +30,13 @@ const Stories = ({ story: { title, news, } }) => {
                                         <div className='flex items-center gap-0.5'><HashtagIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight text-blue-600' /><span className='text-xs font-bold text-blue-600'>{val.by}</span></div>
                                     </div>
 
-                                    <div className=''>
-                                        <h1>{val.title}</h1>
-                                        <p>{val.text}</p>
+                                    <div className='grid items-center justify-items-start px-4 '>
+                                        <h1 className='text-base font-semibold lg:text-sm'>{val.title}</h1>
+                                        <p className='text-sm text-justify lg:text-xs'>{val.text}</p>
                                     </div>
 
-                                    <div className=''>
-                                        <a href={val.url}>{val.btn}</a>
+                                    <div className='flex items-center justify-center px-4 w-full'>
+                                        <a href={val.url} target="_blank" role={"button"} className='w-full bg-gradient-to-b from-slate-900 to-black shadow-md shadow-black text-center text-slate-100 py-1.5 px-7 rounded active:scale-90 transition-all duration-100 ease-in-out sm:text-sm'>{val.btn}</a>
                                     </div>
                                 </div>
                             </SplideSlide>
