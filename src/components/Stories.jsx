@@ -23,11 +23,11 @@ const Stories = ({ story: { title, news, } }) => {
                                     <div className='flex items-center justify-center'><img src={val.img} alt={`img/story/${i}`} className="w-full h-auto object-cover shadow-md shadow-slate-200 rounded-tl-lg rounded-tr-lg" /></div>
 
                                     <div className='flex items-center justify-between w-full px-4'>
-                                        <div className=''><HeartIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight' /><span>{val.like}</span></div>
+                                        <div className='flex items-center gap-0.5'><HeartIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight text-red-500' /><span className='text-xs font-bold'>{val.like}</span></div>
 
-                                        <div className=''><ClockIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight' /><span>{val.time}</span></div>
+                                        <div className='flex items-center gap-0.5'><ClockIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight text-black' /><span className='text-xs font-bold'>{val.time}</span></div>
 
-                                        <div className=''><HashtagIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight' /><span>{val.by}</span></div>
+                                        <div className='flex items-center gap-0.5'><HashtagIcon className='h-6 w-6 sm: h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight text-blue-600' /><span className='text-xs font-bold text-blue-600'>{val.by}</span></div>
                                     </div>
 
                                     <div className=''>
