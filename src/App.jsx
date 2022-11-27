@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, Sales, FlexContent, Stories } from './components';
+import { Hero, Sales, FlexContent, Stories,Footer } from './components';
 
 import { heroapi, popularsales, toprateslaes, highlight, sneaker, story } from './data/data';
 
@@ -13,6 +13,7 @@ const App = () => {
         <Sales endpoint={toprateslaes} />
         <FlexContent endpoint={sneaker} />
         <Stories story={story} />
+        <Footer />
       </main>
     </div>
   )
