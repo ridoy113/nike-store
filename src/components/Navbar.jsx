@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import{HeartIcon, MagnifyingGlassIcon, ShoppingBagIcon} from '@heroicons/react/24/outline'
 import logo from '../assets/logo.png'
 
 
 const Navbar = () => {
+
+    const [navState, setNavState] = useState(false);
+
+const onNavScroll=()=>{
+    if(window.scrollY > 30){
+        setNavState(true)
+    }else{
+        setNavState(false);
+    }
+}
+
+    useEffect(()=>{
+        window.addEventListener('scroll', onNavScroll);
+
+        return() => {
+            window.removeEventListener('scroll', onNavScroll);
+        }
+    },[]);
+
   return (
     <>
-      <header className={`absolute top-7 left-0 right-0 opacity-100 z-50`}>
+      <header className={
+        !navState ? 'absolute top-7 left-0 right-0 opacity-100 z-50' : 'fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-center opacity-100 z-50 blur-effect-theme'
+      }>
         <nav className='flex items-center justify-between nike-container'>
             <div className='flex items-center'>
                 <img src={logo} alt="logo/img" className='w-16 h-auto' />
